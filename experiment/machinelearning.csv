@@ -1,6 +1,6 @@
 MCQ,Choices,Correct
-Who coined the term 'machine learning' in 1959?,a:Donald Hebb | b:Arthur Samuel | c:Alan Turing | d:Tom M. Mitchell,b
-What was the name of the early 'learning machine' developed by Raytheon Company in the early 1960s?,a:Cybertron | b:AlphaGo | c:AlexNet | d:Word2vec,a
-"In Tom M. Mitchell's formal definition of machine learning, what do the letters E, T, and P stand for?","a:Environment, Task, Processing | b:Experience, Task, Performance measure | c:Evaluation, Training, Program | d:Experiment, Theory, Prediction",b
-Which breakthrough computer program became the first to defeat a professional human Go player without handicaps in 2016?,a:Cybertron | b:AlexNet | c:AlphaGo | d:Transformer,c
-What neural network architecture introduced in 2017 is based primarily on attention rather than recurrence or convolution?,a:Transformer | b:Generative Adversarial Network (GAN) | c:Word2vec | d:Perceptron,a
+Who coined the term 'machine learning' in 1959?,a->Donald Hebb || b->Arthur Samuel || c->Alan Turing || d->Tom M. Mitchell,b
+What was the name of the early 'learning machine' developed by Raytheon Company in the early 1960s?,a->Cybertron || b->AlphaGo || c->AlexNet || d->Word2vec,a
+"In Tom M. Mitchell's formal definition of machine learning, what do the letters E, T, and P stand for?","a->Environment, Task, Processing || b->Experience, Task, Performance measure || c->Evaluation, Training, Program || d->Experiment, Theory, Prediction",b
+Which breakthrough computer program became the first to defeat a professional human Go player without handicaps in 2016?,a->Cybertron || b->AlexNet || c->AlphaGo || d->Transformer,c
+What neural network architecture introduced in 2017 is based primarily on attention rather than recurrence or convolution?,a->Transformer || b->Generative Adversarial Network (GAN) || c->Word2vec || d->Perceptron,a
