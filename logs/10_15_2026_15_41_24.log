@@ -1,0 +1,2 @@
+[2026-10-15 15:41:44,780] 1025 httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"
+[2026-10-15 15:41:48,173] 1025 httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/openai/chat/completions "HTTP/1.1 200 OK"

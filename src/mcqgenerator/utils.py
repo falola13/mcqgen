@@ -8,7 +8,7 @@ def read_file(file):
     if file.name.endswith(".pdf"):
         try:
             file.seek(0)
-            pdf_reader=PyPDF2.PdfReader(file)
+            pdf_reader=PyPDF2.PdfReader(file)          
             text=""
             for page in pdf_reader.pages:
                 extracted = page.extract_text()
@@ -46,19 +46,28 @@ def get_table_data(quiz_str):
         return quiz_table_data
     except Exception as e:
         traceback.print_exception(type(e),e,e.__traceback__)
-        return False
+        return None
 
 
 def clean_quiz(quiz):
-    cleaned_quiz = quiz.strip()
-    if cleaned_quiz.startswith("```json"):
-        cleaned_quiz=cleaned_quiz[7:]
-    elif cleaned_quiz.startswith("```"):
-        cleaned_quiz = cleaned_quiz[3:]
 
-    if cleaned_quiz.endswith("```"):
-        cleaned_quiz = cleaned_quiz[:-3]
+    try:
+        start = quiz.index('{')
+        end = quiz.rindex('}') + 1
+        return quiz[start:end]
+    except ValueError:
+        cleaned_quiz = quiz.strip()
+        if cleaned_quiz.startswith("```json"):
+            cleaned_quiz=cleaned_quiz[7:]
+        elif cleaned_quiz.startswith("```"):
+            cleaned_quiz = cleaned_quiz[3:]
 
-    cleaned_quiz=cleaned_quiz.strip()
-    
-    return cleaned_quiz
+        if cleaned_quiz.endswith("```"):
+            cleaned_quiz = cleaned_quiz[:-3]
+
+        
+        
+        return cleaned_quiz.strip()
+
+def convert_for_download(df):
+    return df.to_csv().encode("utf-8")
