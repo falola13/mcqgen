@@ -62,6 +62,8 @@ with st.form("user_inputs"):
                             df.index = df.index +1
                             st.table(df)
                             st.text_area(label="Review", value=response["review"])
+                            
+                            st.text(f"Total Tokens: {cb.total_tokens}")
                         else:
                             st.error("Error in the table data")
 
